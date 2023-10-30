@@ -1,0 +1,22 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "build",
+			"path": "Flask-AppBuilder/examples/react-rest-api/app/static",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: build - Flask-AppBuilder/examples/react-rest-api/app/static",
+			"detail": "NODE_ENV=production webpack --mode=production --colors --progress"
+		},
+		{
+			"type": "npm",
+			"script": "copy-files",
+			"path": "Flask-AppBuilder",
+			"problemMatcher": [],
+			"label": "npm: copy-files - Flask-AppBuilder",
+			"detail": "scripts/copy_fe_dependencies.sh"
+		}
+	]
+}
